@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <title>Survey</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="title">Discord UI Survey</h1>
+      <p class="text-xl">
+        Please give us some feedback on the
+        <a href="https://discord.com/brand-new">Discord</a> homepage!
+      </p>
+
+      <a href="https://discord.com/brand-new">
+        <img src="images/discord.PNG" alt="Discord Homepage" />
+      </a>
+
+      <form id="survey">
+        <div class="card">
+          <h2>Personal Information</h2>
+
+          <div class="question">
+            <label class="form-label">First Name</label>
+            <input
+              type="text"
+              placeholder="Please enter a first name"
+              name="firstName"
+            />
+          </div>
+
+          <label class="form-label">Last Name</label>
+          <input
+            type="text"
+            placeholder="Please enter a last name"
+            name="lastName"
+          />
+        </div>
+
+        <div class="card">
+          <h2>Questions</h2>
+          <div class="radio-group question">
+            <h3>How satisfied are you with the UI overall?</h3>
+            <div>
+              <input type="radio" name="overall-satifaction" value="" />
+              <label for="extremely">Very Satisfied</label>
+            </div>
+
+            <div>
+              <input type="radio" name="overall-satifaction" value="" />
+              <label for="male">Satisfied</label>
+            </div>
+
+            <div>
+              <input type="radio" name="overall-satifaction" value="" />
+              <label for="male">Disatisfied</label>
+            </div>
+
+            <div>
+              <input type="radio" name="overall-satifaction" value="" />
+              <label for="male">Very Disatisfied</label>
+            </div>
+          </div>
+
+          <div class="radio-group question">
+            <h3>How would you describe the UI?</h3>
+            <div>
+              <input type="checkbox" />
+              <label>Easy to use</label>
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label>Easy to learn / Intuitive</label>
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label>Aesthetically pleasing</label>
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label>I hate it. Please make it better</label>
+            </div>
+          </div>
+
+          <div class="question">
+            <h3>How would you rate the UI on a scale from 1-10?</h3>
+            <select id="favorite">
+              <option value="" selected="selected">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+              <option value="">6</option>
+              <option value="">7</option>
+              <option value="">8</option>
+              <option value="">9</option>
+              <option value="">10</option>
+            </select>
+          </div>
+
+          <div class="question">
+            <h3>Do you have any other comments?</h3>
+            <textarea rows="4" placeholder="Tell us here!"></textarea>
+          </div>
+          <button id="submit" type="button">Submit</button>
+        </div>
+      </form>
+    </div>
+    <br /><br />
+    <div class="footer">
+      <span>Created by Daniel Holmes</span>
+    </div>
+  </body>
+</html>

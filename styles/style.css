@@ -1,0 +1,167 @@
+/* Style sheet
+   color picker www.w3schools.com/colors/colors_picker.asp
+*/
+
+html {
+  margin: 0px;
+  background-color: #ffffff;
+}
+
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+img {
+  width: 100%;
+  border-radius: 0px;
+  background: #ffffff;
+  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.container {
+  max-width: 800px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+div.radio-group div {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.card {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+
+  border-style: solid;
+  border-color: #f1f1f1;
+  border-width: 1px;
+  border-radius: 0px;
+  background: #ffffff;
+  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.footer {
+  background-color: #f9fafb;
+  text-align: center;
+  padding: 2rem;
+}
+
+.footer span {
+  color: #6b7280;
+}
+
+.question {
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  line-height: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.title {
+  margin-top: 2rem;
+}
+a {
+  color: #404eed;
+}
+
+p,
+span {
+  color: #1a1a1a;
+}
+
+button {
+  width: 100%;
+  color: white;
+  background-color: #3b82f6;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  line-height: 1.75rem;
+  font-family: "Roboto", sans-serif;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+.form-label {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-bottom: 0.25rem;
+}
+
+/* Text inputs */
+textarea,
+input[type="text"] {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+  box-sizing: border-box;
+  outline: none !important;
+  border: 1px solid #d1d1d1;
+}
+
+textarea:focus,
+input[type="text"]:focus {
+  outline: none !important;
+  border: 1px solid #404eed;
+}
+
+/* Select inputs */
+select {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  outline: none !important;
+  border: 1px solid #d1d1d1;
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+}
+
+select:focus {
+  outline: none !important;
+  border: 1px solid #404eed;
+}
