@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!-- Here is a link to the code the documents this code is based on
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+This will help you get started with your code!
+-->
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+    <title>Module 4 Lab</title>
+  </head>
+  <body>
+    <nav class="navbar bg-dark text-white py-1 mb-3">
+      <div class="container-lg">
+        <img src="images/company_logo.png" style="width: 20%;"/>
+
+        <div class="d-inline" style="width: 80%;">
+          <h1>Welcome to the Ottawa Physiotherapy Clinic</h1>
+          <p>5-2 Lorry Greenberg Dr, Ottawa, ON K1G 5H6</p>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-lg">
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>COVID-19 UPDATE:</strong> Ontario re-opening June 14th! Or so
+        we're told.
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        ></button>
+      </div>
+      <!--
+    Tables are one of many ways to organize information easily.
+    It is a good way to list of prices, or services in a business website
+    https://getbootstrap.com/docs/5.0/content/tables/
+      -->
+
+      <!-- Cards are quite useful when building a website. They are a useful way to organize information.
+    They can be organized using a CSS grid or other layout options.
+    https://getbootstrap.com/docs/5.0/components/card/
+    -->
+    <h1 class="mb-3">Services</h1>
+
+    <div class="mb-4">
+      <table class="table table-info bg-info table-bordered ">
+        <thead>
+          <tr>
+            <td class="fs-5">Service</td>
+            <td class="fs-5">Criteria</td>
+            <td class="fs-5">Price</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="fs-6">COVID 19 Dose #1</td>
+            <td class="fs-6">18+</td>
+            <td class="fs-6">FREE</td>
+          </tr>
+          <tr>
+            <td class="fs-6">COVID 19 Dose #2</td>
+            <td class="fs-6">60+</td>
+            <td class="fs-6">FREE</td>
+          </tr>
+          <tr>
+            <td class="fs-6">Physiotherapy/Massage</td>
+            <td class="fs-6">Anyone</td>
+            <td class="fs-6">$100/hour</td>
+          </tr>
+          <tr>
+            <td class="fs-6">Ultrasound Treatment</td>
+            <td class="fs-6">Anyone</td>
+            <td class="fs-6">$50/hour</td>
+          </tr>
+          <tr>
+            <td class="fs-6">Cupping Therapy</td>
+            <td class="fs-6">Anyone</td>
+            <td class="fs-6">$50/hour</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h1 class="mb-3">Register</h1>
+    <form class="mb-5">
+      <div class="row">
+        <div class="mb-2 col-6">
+          <label for="exampleInputEmail1" class="form-label mb-0">Full Name</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+
+        <div class="mb-2 col-6">
+          <label for="exampleInputEmail1" class="form-label mb-0">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+
+        <div class="mb-2 col-12">
+          <label for="exampleInputEmail1" class="form-label mb-0">Service</label>
+            <select class="form-select" aria-label="Default select example">
+              <option value="1" selected>COVID 19 Dose #1</option>
+              <option value="2">COVID 19 Dose #2</option>
+              <option value="3">Physiotherapy/Massage</option>
+              <option value="4">Ultrasound Treatment</option>
+              <option value="5">Cupping Therapy</option>
+          </select>
+        </div>
+
+
+        <div class="mb-2 col-6">
+          <label for="exampleInputEmail1" class="form-label mb-0">Date</label>
+          <input type="date" class="form-control"/>
+        </div>      
+
+        <div class="mb-2 col-6">
+          <label for="exampleInputEmail1" class="form-label mb-0">Time</label>
+          <input type="time" class="form-control"/>
+        </div> 
+        
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary w-100 mt-3">Submit</button>
+        </div>
+
+      </div>
+    </form>
+
+    <h1 class="mb-3">Meet Our Experts</h1>
+    <div class="row mb-3">
+      <div class="col-lg-3 col-sm-12">
+        <div class="card">
+          <img src="images/doctor.jpg" class="card-img-top img-fluid" style="height: 200px;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Dr. Something</h5>
+            <p class="card-text fs-6">One of the best doctors to ever do it.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-12">
+        <div class="card">
+          <img src="images/doctor_phil.jpg" class="card-img-top img-fluid" style="height: 200px;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Dr. Phil</h5>
+            <p class="card-text fs-6">One of the best doctors to ever do it.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-12">
+        <div class="card">
+          <img src="images/doctor_oz.jpg" class="card-img-top img-fluid" style="height: 200px;" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Dr. Oz</h5>
+            <p class="card-text fs-6">One of the best doctors to ever do it.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- here we input our javascript helper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
